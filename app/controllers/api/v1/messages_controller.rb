@@ -3,7 +3,7 @@ module Api
     class MessagesController < ApplicationController
       def index
         @messages = Message.all
-        render json: { messages: @messages }, status: :ok
+        render json: @messages, status: :ok
       end
     end
   end
