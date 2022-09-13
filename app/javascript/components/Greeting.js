@@ -4,8 +4,6 @@ import { getGreetingFromApi } from '../redux/greeting/greeting'
 
 const Greeting = () => {
   const listing = useSelector((state) => state.greetingReducer, shallowEqual);
-  console.log(listing);
-  console.log(listing.length);
 
   const result = listing[(Math.random() * listing.length) | 0];
   
